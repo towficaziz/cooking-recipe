@@ -6,5 +6,30 @@
             <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
             <app-shopping-list *ngIf="loadedFeature != 'recipe'"></app-shopping-list>
         </div>
+
+        <div class="col-md-12">
+          <button class="btn btn-primary"
+          (click)="onlyOdd = !onlyOdd">Only show odd numbers</button>
+          <br><br>
+          <ul class="list-group">
+            <div *ngIf="onlyOdd">
+              <li
+            class="list-group-item"
+              *ngFor="let odd of oddNumbers">
+              {{odd}}
+            </li>
+            </div>
+
+
+            <div *ngIf="!onlyOdd">
+              <li
+            class="list-group-item"
+              *ngFor="let even of evenNumbers">
+              {{even}}
+            </li>
+            </div>
+
+          </ul>
+        </div>
     </div>
 </div>
