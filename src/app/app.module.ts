@@ -12,6 +12,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { FormsModule } from '@angular/forms';
 import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
 import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
     declarations: [
@@ -24,7 +25,8 @@ import { BetterHighlightDirective } from './better-highlight/better-highlight.di
         RecipeItemComponent,
         ShoppingListComponent,
         ShoppingEditComponent,
-        BetterHighlightDirective
+        BetterHighlightDirective,
+        UnlessDirective
     ],
     providers: [],
     bootstrap: [AppComponent],
