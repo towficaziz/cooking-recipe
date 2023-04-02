@@ -7,7 +7,7 @@
             <app-shopping-list *ngIf="loadedFeature != 'recipe'"></app-shopping-list>
         </div>
 
-        <div class="col-md-12">
+        <!-- <div class="col-md-12">
           <button class="btn btn-primary"
           (click)="onlyOdd = !onlyOdd">Only show odd numbers</button>
           <br><br>
@@ -20,7 +20,7 @@
                 *ngFor="let odd of oddNumbers">
                 {{odd}}
               </li>
-          </div>
+          </div> -->
             <!-- <div *ngIf="!onlyOdd">
               <li
                 class="list-group-item"
@@ -41,7 +41,7 @@
                 </li>
               </div>a
             </ng-template> -->
-            <div *appUnless="onlyOdd">
+            <!-- <div *appUnless="onlyOdd">
               <li
                 class="list-group-item"
                 [ngClass]="{odd: even % 2 !== 0}"
@@ -60,6 +60,6 @@
             <p *ngSwitchCase="100">Value is 100</p>
             <p *ngSwitchDefault>Value is Default</p>
           </div>
-        </div>
+        </div> -->
     </div>
 </div>
