@@ -5,8 +5,6 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { HeaderComponent } from "./header/header.component";
 
-import { ShoppingListComponent } from './shopping-list/shopping-list.component';
-import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
 import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
@@ -22,6 +20,7 @@ import { AuthInterceptorService } from './auth/auth-interceptor.service';
 import { AlertComponent } from './shared/alert/alert.component';
 import { PlaceholderDirective } from './shared/placeholder/placeholder.directive';
 import { RecipesModule } from './recipes/recipes.module';
+import { ShoppinListModule } from './shopping-list/shopping-list.module';
 
 @NgModule({
     declarations: [
@@ -29,8 +28,7 @@ import { RecipesModule } from './recipes/recipes.module';
         AppComponent,
         HeaderComponent,
 
-        ShoppingListComponent,
-        ShoppingEditComponent,
+
         BetterHighlightDirective,
         UnlessDirective,
         DropdownDirective,
@@ -57,7 +55,8 @@ import { RecipesModule } from './recipes/recipes.module';
         ReactiveFormsModule,
         HttpClientModule,
 
-        RecipesModule
+        RecipesModule,
+        ShoppinListModule
     ]
 })
 export class AppModule { }
