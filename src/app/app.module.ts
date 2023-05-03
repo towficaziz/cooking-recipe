@@ -17,24 +17,21 @@ import { RecipesModule } from './recipes/recipes.module';
 import { ShoppinListModule } from './shopping-list/shopping-list.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core-module';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
     declarations: [
         BasicHighlightDirective,
+        BetterHighlightDirective,
+
         AppComponent,
         HeaderComponent,
-
-
-        BetterHighlightDirective,
         UnlessDirective,
-
-        AuthComponent,
     ],
     bootstrap: [AppComponent],
 
     imports: [
         BrowserModule,
-        FormsModule,
         AppRoutingModule,
         ReactiveFormsModule,
         HttpClientModule,
@@ -42,7 +39,8 @@ import { CoreModule } from './core-module';
         RecipesModule,
         ShoppinListModule,
         SharedModule,
-        CoreModule
+        CoreModule,
+        AuthModule
     ]
 })
 export class AppModule { }
