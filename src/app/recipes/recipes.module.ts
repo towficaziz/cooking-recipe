@@ -37,6 +37,6 @@ import { SharedModule } from "../shared/shared.module";
 //     RecipeEditComponent,
 // ]
 })
-export class RecipesModule{
+export class RecipesModule  {
 
 }
